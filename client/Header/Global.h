@@ -35,6 +35,7 @@ extern const int TILE_HEIGHT;
 
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
+extern const std::string RESOURCE_PATH;
 
 //The window we'll be rendering to
 extern SDL_Window* gWindow;

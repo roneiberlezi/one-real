@@ -58,10 +58,10 @@ int Menu::showMenu(){
     SDL_Color color[3] = {{255,255,255,0},{0,0,255,0} , {0,0,0,0}};
     
 	if (tituloFont == NULL);
-		tituloFont = TTF_OpenFont("titulo.ttf", 150);
+		tituloFont = TTF_OpenFont("resources/fonts/titulo.ttf", 150);
     
 	if (menuBox == NULL)
-		loadMedia("menu.png", &menuBox);
+		loadMedia("resources/images/menu/menu.png", &menuBox);
 
 	SDL_Rect posMenu;
     
@@ -146,7 +146,7 @@ int Menu::showMenu(){
     tituloSurface = TTF_RenderText_Solid(tituloFont, tituloString.c_str(), color[0]);
     
 	if (titleLogo == NULL)
-		loadMedia("skull_logo.bmp", &titleLogo);
+		loadMedia("resources/images/menu/skull_logo.bmp", &titleLogo);
 
     SDL_SetColorKey(titleLogo, SDL_TRUE, SDL_MapRGB(titleLogo->format, 0, 0, 0));
     
@@ -155,11 +155,11 @@ int Menu::showMenu(){
     logoPos.y = (screen->h/2) - 300;
     
 	if (background == NULL)
-		background = SDL_LoadBMP("background.bmp");
+		background = SDL_LoadBMP("resources/images/menu/background.bmp");
 	if (splashScreen == NULL)
-		splashScreen = SDL_LoadBMP("splashScreen.bmp");
+		splashScreen = SDL_LoadBMP("resources/images/menu/splashScreen.bmp");
 	if (ammoSplash == NULL)
-		loadMedia("ammoSplash.png", &ammoSplash);
+		loadMedia("resources/images/menu/ammoSplash.png", &ammoSplash);
     SDL_Rect ammoSplashPos;
     bool sucess1 = true;
     bool sucess2 = true;

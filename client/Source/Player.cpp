@@ -120,7 +120,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
 	
 	if (textFont == NULL)
 	{
-		textFont = TTF_OpenFont("ARIAL.ttf", 17);
+		textFont = TTF_OpenFont("resources/fonts/ARIAL.ttf", 17);
 		TTF_SetFontStyle(textFont, TTF_STYLE_BOLD);
 	}
     if (mWeapon->currentAmmo<10){
@@ -226,7 +226,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
         std::stringstream diferenceString;
         SDL_Rect position;
 		if (halloweenFont== NULL)
-			halloweenFont = TTF_OpenFont("halloween.ttf", 100);
+			halloweenFont = TTF_OpenFont("resources/fonts/halloween.ttf", 100);
         color = {255,0,0,0};
         
         //Loading Skull
@@ -322,7 +322,7 @@ void Player::renderKillMessage(SDL_Surface *screenSurface, std::vector<std::stri
             this->initialTime=SDL_GetTicks();
             this->drawingKill=true;
         }
-		killFont = TTF_OpenFont("titulo.ttf", 40);
+		killFont = TTF_OpenFont("resources/fonts/titulo.ttf", 40);
         textSurface = TTF_RenderText_Solid(killFont, (*killMessage)[0].c_str(), color);
 		messagePos.x = (screenSurface->w/2)-(textSurface->w/2);
 		messagePos.y = 60;

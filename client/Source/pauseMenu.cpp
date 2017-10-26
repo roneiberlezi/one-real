@@ -22,7 +22,7 @@ void pauseMenu::showPauseMenu(SDL_Surface* screen, TTF_Font* font){
     fontPause = font;
 
 
-    loadMedia("menu.png", &menuSurface);
+    loadMedia("resources/images/menu/menu.png", &menuSurface);
 	textSurface = TTF_RenderText_Solid(fontPause, "MENU", color[1]);
 	textSurOP[0] = TTF_RenderText_Solid(font, label[0].c_str(), color[0]);
 	textSurOP[1] = TTF_RenderText_Solid(font, label[1].c_str(), color[0]);

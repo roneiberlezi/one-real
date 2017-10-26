@@ -25,7 +25,7 @@ TileSet::TileSet(int tileWidth, int tileHeight, int tileSetNumber){
     this->tileHeight = tileHeight;
     this->tileSetNumber = tileSetNumber;
     //tileSetName = mTileSets[tileSetNumber];
-    tileSetName = "space";
+    tileSetName = "resources/images/maps/space";
     this->tile_amount = 110;
     //    this->tile_amount = tileSetAmount[tileSetNumber];
 	

@@ -43,62 +43,62 @@ bool load_media()
 	//COLOCAR AQUI PRA CARREGAR MAPAS E SPRITES EM GERAL!
 
 	//Load music
-	gMusic = Mix_LoadMUS("sounds/mansion.mp3");
+	gMusic = Mix_LoadMUS("resources/sounds/mansion.mp3");
 	if (gMusic == NULL)
 	{
 		printf("Failed to load background music! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
     
-    gOpenning = Mix_LoadWAV("shot_1.wav");
+    gOpenning = Mix_LoadWAV("resources/sounds/shot_1.wav");
     if(gOpenning ==NULL){
         printf ("Failed to load splash.mp3 sound! SDL_Mixer Error: %s\n",Mix_GetError());
         success=false;
     }
     
-    gKill = Mix_LoadWAV("kill.wav");
+    gKill = Mix_LoadWAV("resources/sounds/kill.wav");
     if(gKill ==NULL){
         printf ("Failed to load kill.wav sound! SDL_Mixer Error: %s\n",Mix_GetError());
         success=false;
     }
 
-	gFirstBlood = Mix_LoadWAV("sounds/firstblood.wav");
+	gFirstBlood = Mix_LoadWAV("resources/sounds/firstblood.wav");
 	if (gFirstBlood == NULL){
 		printf("Failed to load firstblood.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gDoubleKill = Mix_LoadWAV("sounds/doublekill.wav");
+	gDoubleKill = Mix_LoadWAV("resources/sounds/doublekill.wav");
 	if (gDoubleKill == NULL){
 		printf("Failed to load doublekill.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gTripleKill = Mix_LoadWAV("sounds/triplekill.wav");
+	gTripleKill = Mix_LoadWAV("resources/sounds/triplekill.wav");
 	if (gTripleKill == NULL){
 		printf("Failed to load triplekill.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gUltraKill = Mix_LoadWAV("sounds/ultrakill.wav");
+	gUltraKill = Mix_LoadWAV("resources/sounds/ultrakill.wav");
 	if (gUltraKill == NULL){
 		printf("Failed to load ultrakill.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gGodLike = Mix_LoadWAV("sounds/godlike.wav");
+	gGodLike = Mix_LoadWAV("resources/sounds/godlike.wav");
 	if (gGodLike == NULL){
 		printf("Failed to load godlike.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gHeal = Mix_LoadWAV("sounds/health.wav");
+	gHeal = Mix_LoadWAV("resources/sounds/health.wav");
 	if (gHeal == NULL){
 		printf("Failed to load heal.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
     
-    gGunPickUp = Mix_LoadWAV("sounds/guncock.wav");
+    gGunPickUp = Mix_LoadWAV("resources/sounds/guncock.wav");
     if (gGunPickUp == NULL){
         printf("Failed to load guncock.wav sound! SDL_Mixer Error: %s\n", Mix_GetError());
         success = false;
@@ -106,64 +106,64 @@ bool load_media()
     
     //Weapon Sounds
     //Load sound effects
-    weapon1.sShot = Mix_LoadWAV("sounds/lazer3.wav");
+    weapon1.sShot = Mix_LoadWAV("resources/sounds/lazer3.wav");
     if (weapon1.sShot == NULL) printf("Failed to load shot_0.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-    weapon1.sEmpty = Mix_LoadWAV("empty_weapon.wav");
+    weapon1.sEmpty = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
     if (weapon1.sEmpty == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-    weapon1.sReload = Mix_LoadWAV("ammo_pickup.wav");
+    weapon1.sReload = Mix_LoadWAV("resources/sounds/ammo_pickup.wav");
     if (weapon1.sReload == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 
-	weapon2.sShot = Mix_LoadWAV("sounds/possiblelaser.wav");
+	weapon2.sShot = Mix_LoadWAV("resources/sounds/possiblelaser.wav");
 	if (weapon2.sShot == NULL) printf("Failed to load shot_1.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon2.sEmpty = Mix_LoadWAV("empty_weapon.wav");
+	weapon2.sEmpty = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
 	if (weapon2.sEmpty == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon2.sReload = Mix_LoadWAV("ammo_pickup.wav");
+	weapon2.sReload = Mix_LoadWAV("resources/sounds/ammo_pickup.wav");
 	if (weapon2.sReload == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 
-	weapon3.sShot = Mix_LoadWAV("sounds/silencedgunshot.wav");
+	weapon3.sShot = Mix_LoadWAV("resources/sounds/silencedgunshot.wav");
 	if (weapon3.sShot == NULL) printf("Failed to load shot_2.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon3.sEmpty = Mix_LoadWAV("empty_weapon.wav");
+	weapon3.sEmpty = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
 	if (weapon3.sEmpty == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 	weapon3.sReload = Mix_LoadWAV("ammo_pickup.wav");
 	if (weapon3.sReload == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 
-	weapon4.sShot = Mix_LoadWAV("sounds/lasershort.wav");
+	weapon4.sShot = Mix_LoadWAV("resources/sounds/lasershort.wav");
 	if (weapon4.sShot == NULL) printf("Failed to load shot_2.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon4.sEmpty = Mix_LoadWAV("empty_weapon.wav");
+	weapon4.sEmpty = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
 	if (weapon4.sEmpty == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon4.sReload = Mix_LoadWAV("ammo_pickup.wav");
+	weapon4.sReload = Mix_LoadWAV("resources/sounds/ammo_pickup.wav");
 	if (weapon4.sReload == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 
-	weapon5.sShot = Mix_LoadWAV("sounds/biglaser.wav");
+	weapon5.sShot = Mix_LoadWAV("resources/sounds/biglaser.wav");
 	if (weapon5.sShot == NULL) printf("Failed to load shot_3.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon5.sEmpty = Mix_LoadWAV("empty_weapon.wav");
+	weapon5.sEmpty = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
 	if (weapon5.sEmpty == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
-	weapon5.sReload = Mix_LoadWAV("ammo_pickup.wav");
+	weapon5.sReload = Mix_LoadWAV("resources/sounds/ammo_pickup.wav");
 	if (weapon5.sReload == NULL) printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 	
 	//Load sound effects
-	gShot0 = Mix_LoadWAV("shot_0.wav");
+	gShot0 = Mix_LoadWAV("resources/sounds/shot_0.wav");
 	if (gShot0 == NULL)
 	{
 	printf("Failed to load shot_0.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 	success = false;
 	}
 
-	gEmptyWeapon = Mix_LoadWAV("empty_weapon.wav");
+	gEmptyWeapon = Mix_LoadWAV("resources/sounds/empty_weapon.wav");
 	if (gEmptyWeapon == NULL)
 	{
 		printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gReloadWeapon = Mix_LoadWAV("ammo_pickup.wav");
+	gReloadWeapon = Mix_LoadWAV("resources/sounds/ammo_pickup.wav");
 	if (gReloadWeapon == NULL)
 	{
 		printf("Failed to load empty_weapon.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
 		success = false;
 	}
 
-	gWeaponPick = Mix_LoadWAV("weapon_pickup2.wav");
+	gWeaponPick = Mix_LoadWAV("resources/sounds/weapon_pickup2.wav");
 	if (gWeaponPick == NULL)
 	{
 		printf("Failed to load weapon_pickup2.wav sound effect! SDL_mixer Error: %s\n", Mix_GetError());
@@ -233,47 +233,47 @@ bool init()
     weapon1.type = 0;
     weapon1.damage = 10;
     weapon1.fireRate = 10;
-    loadMedia("weapons/w1.png", &weapon1.weaponSurface);
-    loadMedia("weapons/b5.png", &weapon1.bulletSurface);
+    loadMedia("resources/images/weapons/w1.png", &weapon1.weaponSurface);
+    loadMedia("resources/images/weapons/b5.png", &weapon1.bulletSurface);
 
 	//weapon2
 	weapon2.type = 1;
 	weapon2.damage = 20;
     weapon2.fireRate = 8;
-	loadMedia("weapons/w2.png", &weapon2.weaponSurface);
-	loadMedia("weapons/b2.png", &weapon2.bulletSurface);
+	loadMedia("resources/images/weapons/w2.png", &weapon2.weaponSurface);
+	loadMedia("resources/images/weapons/b2.png", &weapon2.bulletSurface);
 	
 	//weapon3
 	weapon3.type = 2;
 	weapon3.damage = 30;
     weapon3.fireRate = 6;
-	loadMedia("weapons/w3.png", &weapon3.weaponSurface);
-	loadMedia("weapons/b8.png", &weapon3.bulletSurface);
+	loadMedia("resources/images/weapons/w3.png", &weapon3.weaponSurface);
+	loadMedia("resources/images/weapons/b8.png", &weapon3.bulletSurface);
 
 	//weapon4
 	weapon4.type = 3;
 	weapon4.damage = 40;
     weapon4.fireRate = 6;
-	loadMedia("weapons/w4.png", &weapon4.weaponSurface);
-	loadMedia("weapons/b9.png", &weapon4.bulletSurface);
+	loadMedia("resources/images/weapons/w4.png", &weapon4.weaponSurface);
+	loadMedia("resources/images/weapons/b9.png", &weapon4.bulletSurface);
 
 	//weapon5
 	weapon5.type = 4;
 	weapon5.damage = 50;
     weapon5.fireRate = 3;
-	loadMedia("weapons/w6.png", &weapon5.weaponSurface);
-	loadMedia("weapons/b7.png", &weapon5.bulletSurface);
+	loadMedia("resources/images/weapons/w6.png", &weapon5.weaponSurface);
+	loadMedia("resources/images/weapons/b7.png", &weapon5.bulletSurface);
 
 	//Pre-Loading Itens
-	loadMedia("itens/health.png", &health);
-	loadMedia("itens/ammo.png", &ammo);
-    loadMedia("itens/weapon.png", &weaponBox);
+	loadMedia("resources/images/itens/health.png", &health);
+	loadMedia("resources/images/itens/ammo.png", &ammo);
+    loadMedia("resources/images/itens/weapon.png", &weaponBox);
 
 	//Death Sprite
-	loadMedia("dead.png", &dead);
+	loadMedia("resources/images/player/dead.png", &dead);
     
     //Pre-Load player sprite
-    loadMedia("SpriteSheet.png", &playerSprite);
+    loadMedia("resources/images/player/SpriteSheet.png", &playerSprite);
     
     //Initialization flag
     bool success = true;
@@ -287,7 +287,7 @@ bool init()
     else
     {
         //Create window
-        gWindow = SDL_CreateWindow( "!Real 1.0", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
+        gWindow = SDL_CreateWindow( "One Real 1.1", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
         if( gWindow == NULL )
         {
             printf( "Window could not be created! SDL_Error: %s\n", SDL_GetError() );
@@ -547,7 +547,7 @@ int main( int argc, char* args[])
                     SDL_Surface* scoreSurface;
                     SDL_Color color{255,255,255,0};
                     TTF_Font* messageEndGameFont;
-                    messageEndGameFont= TTF_OpenFont("halloween.ttf", 50);
+                    messageEndGameFont= TTF_OpenFont("resources/fonts/halloween.ttf", 50);
                     std::stringstream timerNext;
                     std::string victoryString;
                     std::string bigestKiller = mPlayer->nickName;

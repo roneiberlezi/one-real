@@ -13,6 +13,7 @@ const int TILE_HEIGHT = 64;
 
 const int SCREEN_WIDTH = 1024;
 const int SCREEN_HEIGHT = 640;
+const std::string RESOURCE_PATH = "resources/";
 
 //The window we'll be rendering to
 SDL_Window* gWindow = NULL;
@@ -26,7 +27,7 @@ SDL_Event event;
 //Console information
 Console* mConsole;
 TTF_Font* font;
-std::string fontFileName = "arial.ttf";
+std::string fontFileName = "resources/fonts/arial.ttf";
 const SDL_Color CONSOLE_TEXT_COLOR = { 255, 255, 255 };
 const Uint32 CONSOLE_BACKGROUD_COLOR = color32(48, 56, 138, 0);
 const int CONSOLE_TEXT_SIZE = 12;
