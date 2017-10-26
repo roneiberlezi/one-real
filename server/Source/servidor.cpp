@@ -102,8 +102,6 @@ int main(int argc, char* args[])
     int PPS = 30;
     lastTimeDataSent = SDL_GetTicks();
     
-
-	//Necess‡rio para manter os sockets sem travar o servidor (MAX 30)
 	SDLNet_SocketSet socketSet = SDLNet_AllocSocketSet(30);
 	
 	//Abre o servidor para conexões
@@ -112,7 +110,7 @@ int main(int argc, char* args[])
 	std::cout << "Server started!";
 
 	while (running){
-			//Aceita uma nova conexão, caso nenhuma conexão nova seja criada, ele retornará NULL em tmpSocket
+			//Aceita uma nova conex‹o, caso nenhuma conex‹o nova seja criada, ele retornará NULL em tmpSocket
 			TCPsocket tmpSocket = SDLNet_TCP_Accept(server);
 
 			if (tmpSocket){

@@ -18,7 +18,7 @@ Ranking::Ranking(){
 void Ranking::rankingDraw(Player* p, std::map<int, Player*>* enemies, SDL_Surface *screenSurface, TTF_Font *font){
 
 	if (rankingBox==NULL)
-		loadMedia("rankingBG.png", &rankingBox);
+		loadMedia("resources/images/player/rankingBG.png", &rankingBox);
 
 	SDL_Rect posRank;
 
