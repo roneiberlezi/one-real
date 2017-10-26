@@ -111,7 +111,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
 	SDL_Rect temp;
 
 	if (ammoBG == NULL)
-		loadMedia("ammoBG.png", &ammoBG);
+		loadMedia("resources/images/player/ammoBG.png", &ammoBG);
 
 	temp.x = 1024 - ammoBG->clip_rect.w;
 	temp.y = 640 - ammoBG->clip_rect.h;
@@ -161,7 +161,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
 	SDL_Rect posLifebar;
 
 	if (profileImg == NULL)
-		loadMedia("profile.png", &profileImg);
+		loadMedia("resources/images/player/profile.png", &profileImg);
 
 	profileSheet.h = 72;
 	profileSheet.w = 80;
@@ -189,7 +189,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
 	posLifebar.y = 637 - 74;
 
 	if (lifebarBG==NULL)
-		loadMedia("lifebar.png", &lifebarBG);
+		loadMedia("resources/images/player/lifebar.png", &lifebarBG);
 
 	posLifebar.x = 1;
 	posLifebar.y = 639 - lifebarBG->clip_rect.h;
@@ -232,7 +232,7 @@ void Player::renderHUD(SDL_Surface *screenSurface,int x, int y){
         //Loading Skull
 		if (deathSurface == NULL)
 		{
-			loadMedia("skull.bmp", &deathSurface);
+			loadMedia("resources/images/player/skull.bmp", &deathSurface);
 			SDL_SetColorKey(deathSurface, SDL_TRUE, SDL_MapRGB(deathSurface->format, 0, 0, 0));
 		}
         

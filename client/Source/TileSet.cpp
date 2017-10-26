@@ -25,7 +25,7 @@ TileSet::TileSet(int tileWidth, int tileHeight, int tileSetNumber){
     this->tileHeight = tileHeight;
     this->tileSetNumber = tileSetNumber;
     //tileSetName = mTileSets[tileSetNumber];
-    tileSetName = "resources/images/maps/space";
+    tileSetName = "space";
     this->tile_amount = 110;
     //    this->tile_amount = tileSetAmount[tileSetNumber];
 	
@@ -39,7 +39,8 @@ void TileSet::loadTileSet(){
     std::string stringBuffer;
     //std::string tilePosition;
     for (int i = 0; i < tile_amount; i++){
-        stringBuffer = tileSetName;
+        stringBuffer = "resources/images/maps/";
+        stringBuffer.append(tileSetName);
         stringBuffer.append("/");
         stringBuffer.append(tileSetName);
         stringBuffer.append(std::to_string(i));

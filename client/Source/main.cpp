@@ -223,10 +223,10 @@ bool init()
     commandMap["demo"] = new CommandDemoServer();
     
 	//Maps
-    maps[0] = "smallmap";
-    maps[1] = "map2";
-    maps[2] = "map3";
-    maps[3] = "map4";
+    maps[0] = "resources/maps/smallmap";
+    maps[1] = "resources/maps/map2";
+    maps[2] = "resources/maps/map3";
+    maps[3] = "resources/maps/map4";
     
     //WEAPON DEFINITIONS
     //weapon1
